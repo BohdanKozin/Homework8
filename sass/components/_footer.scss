@@ -1,32 +1,35 @@
 .footer {
     background-color: #2F303A;
     width: auto;
-.logo__wraper {
+
+    .logo__wraper {
         text-align: center;
     }
-.logo{ 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    padding-top: 25px;
-    .text {
-        color: var(--focus-text-color);
+
+    .logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        padding-top: 25px;
+
+        .text {
+            color: var(--focus-text-color);
+        }
     }
-}
 
     &_logo {
         color: var(--other-text-color);
         text-align: center;
 
     }
-        
+
 
     &__container {
-        
+
         padding-top: 60px;
         padding-bottom: 60px;
-        
+
     }
 
     &__list {
@@ -53,9 +56,7 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-    &__link-container {
-        
-    }
+    &__link-container {}
 
     &__title {
         text-align: center;
@@ -73,7 +74,7 @@
 
     &__link {
         display: flex;
-justify-content: center;
+        justify-content: center;
     }
 
     &__list-network:not(:last-child) {
@@ -102,14 +103,14 @@ justify-content: center;
         background-color: var(--focus-text-color);
     }
 
-    &__mail {display: flex;
-        flex-direction: column;
+    &__mail {
         justify-content: center;
 
-    
+
     }
 
-    &__text {margin-top: 60px;
+    &__text {
+        margin-top: 60px;
         text-align: center;
         color: var(--other-text-color);
         margin-bottom: 20px;
@@ -122,10 +123,12 @@ justify-content: center;
         text-transform: uppercase;
     }
 
-    &__form { display: flex;
+    &__form {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-       
+        flex-direction: column;
+
     }
 
     &__imput {
@@ -133,7 +136,7 @@ justify-content: center;
         padding-left: 15px;
         padding-top: 16px;
         padding-bottom: 16px;
-        width: 450px;
+
         color: rgba(255, 255, 255, 0.6);
         background-color: #2F303A;
         font-weight: 400;
@@ -150,11 +153,16 @@ justify-content: center;
         outline-offset: 0;
     }
 
+    .btn-wraper {
+        display: flex;
+        justify-content: center;
+    }
+
     &__btn {
         display: flex;
         align-items: center;
-        margin-top: 20px; 
-        
+        margin-top: 20px;
+        width: 200px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;

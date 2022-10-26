@@ -22,8 +22,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 528px;
-        height: 581px;
+        width: 450px;
+        height: 609px;
         border-radius: 4px;
         background-color: var(--other-text-color);
         z-index: 5;
@@ -139,12 +139,12 @@
     &__chek {
         display: inline-block;
         margin-top: 10px;
-        padding-left: 40px;
+        padding-left: 30px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 14px;
         letter-spacing: 0.03em;
         cursor: pointer;
     }
@@ -172,7 +172,7 @@
     &__icon-box {
         position: absolute;
         transform: translateX(-28px);
-        margin-top: 4px;
+        margin-top: -2px;
         
     }
 
@@ -181,7 +181,7 @@
     &__icon-checkbox {
         position: absolute;
         transform: translateX(-28px);
-        margin-top: 4px;
+        margin-top: -2px;
         opacity: 1;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
         z-index:1;
