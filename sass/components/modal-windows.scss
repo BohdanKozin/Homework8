@@ -1,0 +1,224 @@
+// Modalka-Fom
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    // Modalka-content
+    &__content {
+        opacity: 1;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 528px;
+        height: 581px;
+        border-radius: 4px;
+        background-color: var(--other-text-color);
+        z-index: 5;
+        padding: 40px 39px 40px 41px;
+
+
+    }
+
+    &__button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: var(--other-text-color);
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__icon-close {
+        fill: currentColor;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button:hover {
+        color: var(--focus-text-color);
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 12px;
+    }
+}
+
+// Forma in modal content
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        color: var(--advantage-text-color);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+    }
+
+    &__imput {
+        position: relative;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        appearance: none;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    .form__imput.form__imput-feedback {
+        resize: none;
+        padding: 10px 10px 10px 20px;
+        height: 124px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: -10px;
+    }
+
+    &__imput:focus {
+        outline: 0;
+        outline-offset: 0;
+        border: 1px solid var(--focus-text-color);
+    }
+
+    .form__imput-feedback:focus {
+        outline: 0;
+        outline-offset: 0;
+        border: 1px solid var(--focus-text-color);
+    }
+
+    &__imput:focus+&__icon {
+        fill: var(--focus-text-color);
+    }
+
+    /* ICON-FORM */
+    &__icon {
+        position: absolute;
+        margin-left: 12px;
+        transform: translateY(29px);
+    }
+
+    // CHEKED-TEXT
+    &-margin {
+        margin-top: 20px;
+    }
+
+    &__chek {
+        display: inline-block;
+        margin-top: 10px;
+        padding-left: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+
+    &__text-span {
+        color: var(--focus-text-color);
+        margin-left: 7px;
+        border-bottom: 1px solid var(--focus-text-color);
+    }
+
+    /* ICON-FORM-CHECKED */
+    &__icon-box {
+        position: absolute;
+        transform: translateX(-28px);
+        margin-top: 4px;
+        
+    }
+
+
+
+    &__icon-checkbox {
+        position: absolute;
+        transform: translateX(-28px);
+        margin-top: 4px;
+        opacity: 1;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        z-index:1;
+    }
+
+ &__checkbox:checked+&__icon-checkbox {
+     opacity: 0;
+ }
+        
+}
+
+// button-open
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    &-submit {
+        display: flex;
+        justify-content: center;
+        background-color: #2196F3;
+        padding: 10px 52px 10px 52px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-width: 0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--other-text-color);
+        cursor: pointer;
+    }
+
+
+}

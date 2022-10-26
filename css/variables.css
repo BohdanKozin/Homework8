@@ -1,0 +1,15 @@
+:root {
+  --primary-text-color: #212121;
+  --focus-text-color: #2196F3;
+  --other-text-color: #FFFFFF;
+  --logo-text-color: #000000;
+  --advantage-text-color: #757575;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}/*# sourceMappingURL=variables.css.map */

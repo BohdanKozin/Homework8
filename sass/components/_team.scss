@@ -1,0 +1,95 @@
+.beckground {
+    background-color: #F5F4FA;
+}
+
+
+.team {
+    margin: 0 auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+
+    &__title {
+        margin: 0 0 50px 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0;
+    }
+
+    &__card {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__card:not(:last-child) {
+        margin-right: 30px;
+    }
+
+
+
+    &__wraper {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__post {
+        margin-bottom: 16px;
+
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        color: var(--advantage-text-color);
+    }
+
+    &__netwokr {
+        display: flex;
+    }
+
+    &__netwokr-list:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__netwokr-link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #AFB1B8;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__netwokr-link:hover,
+    &__netwokr-link:focus {
+        background-color: #2196F3;
+        border-radius: 50%;
+        color: #F5F4FA;
+    }
+
+    &__netwokr-icon {
+        fill: currentColor;
+    }
+
+}
