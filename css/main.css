@@ -364,7 +364,6 @@ img {
 
 .conteiner {
   margin: 0 auto;
-  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -936,6 +935,7 @@ body {
 
 .footer {
   background-color: #2F303A;
+  width: auto;
 }
 .footer .logo__wraper {
   text-align: center;
