@@ -12,33 +12,55 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body>
+<body is-open>
   <!-- header-->
   <header class="header">
     <div class="conteiner">
-      <a class="logo" href="index.html"><span class="text">Web</span>Studio</a>
-      <nav>
-        <ul class="navigation list">
-          <li class="navigation__link navigation__element"><a href="index.html"
-              class="navigation__btn navigation__btn-activ navigation__btncorrent">Студія</a></li>
-          <li class="navigation__link navigation__element"><a href="portfolio.html"
-              class="navigation__btn">Портфоліо</a></li>
-          <li class="navigation__link navigation__element"><a href="#" class="navigation__btn">Контакти</a></li>
+      <div class="wraper__logo">
+        <a class="logo" href="index.html"><span class="text">Web</span>Studio</a>
+        <button class="btn-menu js-open-menu" >
+          <svg width="40" Height="40" class="icon-menu ">
+            <use href="images/sprites.svg#icon-menu_40px"></use>
+          </svg>
+          <svg width="40" Height="40" class="icom-menu-close   js-close-menu">
+            <use href="images/sprites.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+
+      <div class="container-navigation js-menu-container" >
+        <nav>
+          <ul class="navigation list">
+            <li class="navigation__link navigation__element"><a href="index.html"
+                class="navigation__btn navigation__btn-activ navigation__btncorrent">Студія</a></li>
+            <li class="navigation__link navigation__element"><a href="portfolio.html"
+                class="navigation__btn">Портфоліо</a></li>
+            <li class="navigation__link navigation__element"><a href="#" class="navigation__btn">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="communication list">
+          <li class="communication__link ">
+            <a href="mailto:info@devstudio.com" class="communication__mail"> <svg width="16" Height="12"
+                class="communication__icon-mail">
+                <use href="images/sprites.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="communication__link "><a href="tel:+380961111111" class="communication__tel"><svg width="14"
+                Height="16" class="communication__icon-tel">
+                <use href="images/sprites.svg#icon-smartphone-2"></use>
+              </svg>+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="communication list">
-        <li class="communication__link ">
-          <a href="mailto:info@devstudio.com" class="communication__mail"> <svg width="16" Height="12"
-              class="communication__icon-mail">
-              <use href="images/sprites.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="communication__link "><a href="tel:+380961111111" class="communication__tel"><svg width="14"
-              Height="16" class="communication__icon-tel">
-              <use href="images/sprites.svg#icon-smartphone-2"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+
+          <ul class="seti">
+            <li class="seti-name">Instagram</li>
+            <li class="seti-name">Twitter</li>
+            <li class="seti-name">Facebook</li>
+            <li class="seti-name">LinkedIn</li>
+          </ul>
+
+      </div>
     </div>
   </header>
 
@@ -88,16 +110,16 @@
                 <div class="form-margin">
                   <label for="chek" class="form__chek">
                     <input class="form__checkbox" type="checkbox" name="agree" checked id="chek" />
-                    
+
                     <svg width="16" Height="15" class="form__icon-checkbox">
                       <use href="images/sprites.svg#icon-icon-check-1"></use>
                     </svg>
-                   
+
                     <svg width="16" Height="15" class="form__icon-box">
                       <use href="images/sprites.svg#icon-kvadrat"></use>
                     </svg>
 
-                   
+
                     Погоджуюся з розсилкою та приймаю <a href=""><span class="form__text-span"> Умови
                         договору</span></a>
                   </label>
@@ -117,48 +139,48 @@
     <!-- advantage firm-->
     <section>
       <div class="advantage conteiner">
-      <h2 class="advantage__title">Переваги фірми</h2>
-      <ul class="advantage__list">
-        <li class="advantage__item">
-          <div class="advantage__icon"><svg width="70" height="70">
-              <use href="images/sprites.svg#icon-antenna-1-1"></use>
-            </svg></div>
-          <h3 class="advantage__title-two">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p class="advantage__text">
-            Ідейні міркування, і навіть початок повсякденної роботи з
-            формування позиції.
-          </p>
-        </li>
-        <li class="advantage__item">
-          <div class="advantage__icon"> <svg width="70" height="70">
-              <use href="images/sprites.svg#icon-clock-1"></use>
-            </svg></div>
-          <h3 class="advantage__title-two">ПУНКТУАЛЬНІСТЬ</h3>
-          <p class="advantage__text">
-            Завдання організації, особливо рамки і місце навчання кадрів тягне
-            у себе.
-          </p>
-        </li>
-        <li class="advantage__item">
-          <div class="advantage__icon"><svg width="70" height="70">
-              <use href="images/sprites.svg#icon-diagram-1"></use>
-            </svg></div>
-          <h3 class="advantage__title-two">ПЛАНУВАННЯ</h3>
-          <p class="advantage__text">
-            Так само консультація з широким активом значною мірою зумовлює.
-          </p>
-        </li>
-        <li class="advantage__item">
-          <div class="advantage__icon"><svg width="70" height="70">
-              <use href="images/sprites.svg#icon-astronaut-1"></use>
-            </svg></div>
-          <h3 class="advantage__title-two">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p class="advantage__text">
-            Значимість цих проблем настільки очевидна, що реалізація планових
-            завдань.
-          </p>
-        </li>
-      </ul>
+        <h2 class="advantage__title">Переваги фірми</h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <div class="advantage__icon"><svg width="70" height="70">
+                <use href="images/sprites.svg#icon-antenna-1-1"></use>
+              </svg></div>
+            <h3 class="advantage__title-two">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="advantage__text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__icon"> <svg width="70" height="70">
+                <use href="images/sprites.svg#icon-clock-1"></use>
+              </svg></div>
+            <h3 class="advantage__title-two">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="advantage__text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__icon"><svg width="70" height="70">
+                <use href="images/sprites.svg#icon-diagram-1"></use>
+              </svg></div>
+            <h3 class="advantage__title-two">ПЛАНУВАННЯ</h3>
+            <p class="advantage__text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="advantage__item">
+            <div class="advantage__icon"><svg width="70" height="70">
+                <use href="images/sprites.svg#icon-astronaut-1"></use>
+              </svg></div>
+            <h3 class="advantage__title-two">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="advantage__text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -187,14 +209,14 @@
     <!-- Our team team__container-->
 
     <section class="beckground">
-      
+
       <div class="team conteiner">
         <h2 class="team__title">Наша команда</h2>
 
 
         <ul class="team__list">
           <li class="team__card">
-            <img class="team__foto" src="images/ihor.jpg" alt="працівник Ігор"  />
+            <img class="team__foto" src="images/ihor.jpg" alt="працівник Ігор" />
             <div class="team__wraper">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__post">Product Designer</p>
@@ -209,12 +231,12 @@
                       viewBox="0 0 100 100" class="team__netwokr-icon">
                       <use href="images/sprites.svg#icon-twitter-1"></use>
                     </svg></a>
-                  </li>
+                </li>
                 <li class="team__netwokr-list"><a href="" class="team__netwokr-link fb"><svg width="23" height="23"
                       viewBox="0 0 100 100" class="team__netwokr-icon">
                       <use href="images/sprites.svg#icon-facebook-1"></use>
                     </svg></a>
-                  </li>
+                </li>
                 <li class="team__netwokr-list"><a href="" class="team__netwokr-link"><svg width="20"
                       viewBox="0 0 100 100" class="team__netwokr-icon">
                       <use href="images/sprites.svg#icon-linkedin-1"></use>
@@ -225,7 +247,7 @@
           </li>
 
           <li class="team__card">
-            <img class="team__foto" src="images/olha.jpg" alt="працівник Ольга"  />
+            <img class="team__foto" src="images/olha.jpg" alt="працівник Ольга" />
             <div class="team__wraper">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__post">Frontend Developer</p>
@@ -255,11 +277,11 @@
               </ul>
             </div>
           </li>
-          
+
 
 
           <li class="team__card">
-            <img class="team__foto" src="images/mykola.jpg" alt="працівник Микола"  />
+            <img class="team__foto" src="images/mykola.jpg" alt="працівник Микола" />
             <div class="team__wraper">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__post">Marketing</p>
@@ -290,7 +312,7 @@
 
           </li>
           <li class="team__card">
-            <img class="team__foto" src="images/mykhailo.jpg" alt="працівник Михайло"  />
+            <img class="team__foto" src="images/mykhailo.jpg" alt="працівник Михайло" />
             <div class="team__wraper">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__post">UI Designer</p>
@@ -404,15 +426,16 @@
       </div>
       <div class="footer__mail">
         <h1 class="footer__text">Підпишіться на розсилку</h1>
-       <form action="" class="footer__form">
+        <form action="" class="footer__form">
           <input class="footer__imput" type="email" name="email" placeholder="E-mail">
         </form>
         <div class="btn-wraper">
           <button class="footer__btn">
-          Підписатися <svg width="20" viewBox="0 0 100 100" class="footer__icon-distribution">
-            <use href="images/sprites.svg#icon-icon-send"></use>
-          </svg>
-        </button></div>
+            Підписатися <svg width="20" viewBox="0 0 100 100" class="footer__icon-distribution">
+              <use href="images/sprites.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </footer>
@@ -421,16 +444,7 @@
 
 
   <script src="./JS/modal.js"></script>
+  <script src="./JS/menu.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-

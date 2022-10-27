@@ -1288,6 +1288,9 @@ body {
   font-size: 26px;
   line-height: 1.2;
   padding-top: 25px;
+  padding-bottom: 0px;
+  margin-right: 0px;
+  color: #FFFFFF;
 }
 .footer .logo .text {
   color: var(--focus-text-color);
@@ -1612,4 +1615,175 @@ body {
     width: 20px px;
     height: 20px;
   }
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-text-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (min-height: 1600px) {
+  .logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.logo .text {
+  color: var(--focus-text-color);
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wraper__logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.icom-menu-close {
+  display: none;
+}
+
+.btn-menu.is-open .icom-menu-close {
+  display: block;
+}
+
+.btn-menu.true .icon-menu {
+  display: none;
+}
+
+.container-navigation {
+  display: none;
+}
+
+.container-navigation.is-open {
+  display: block;
+}
+
+.container-navigation {
+  width: 480px;
+  height: 796px;
+  padding: 48px 0px 48px 40px;
+}
+.container-navigation .navigation > .container-navigation .navigation__link:not(:last-child) {
+  margin-right: 50px;
+}
+.container-navigation .navigation__element {
+  position: relative;
+}
+.container-navigation .navigation .navigation__btn {
+  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 32px;
+  color: var(---primary-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container-navigation .navigation .navigation__btn.navigation__btn-activ.navigation__btncorrent {
+  color: var(--focus-text-color);
+}
+.container-navigation .navigation__btn:hover, .container-navigation .navigation__btn:focus {
+  color: var(--focus-text-color);
+}
+.container-navigation .navigation__btn::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 4px;
+  border: 1px solid var(--focus-text-color);
+  border-radius: 4px;
+  background-color: var(--focus-text-color);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container-navigation .navigation__btn:hover::after, .container-navigation .navigation__btn:focus::after {
+  color: var(--focus-text-color);
+  opacity: 1;
+}
+.container-navigation .communication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-top: 240px;
+}
+.container-navigation .communication .communication__link {
+  margin-top: 32px;
+}
+.container-navigation .communication__tel {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
+.container-navigation .communication__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.container-navigation .communication__mail, .container-navigation .communication__tel {
+  color: var(--advantage-text-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container-navigation .communication__icon-mail, .container-navigation .communication__icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.container-navigation .communication__mail:hover, .container-navigation .communication__mail:focus, .container-navigation .communication__tel:hover, .container-navigation .communication__tel:focus {
+  color: var(--focus-text-color);
+}
+.container-navigation .communication__icon-tel {
+  display: none;
+}
+.container-navigation .communication__icon-mail {
+  display: none;
+}
+.container-navigation .seti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  gap: 20px;
+}
+.container-navigation .seti-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
