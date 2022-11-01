@@ -15,21 +15,22 @@
 <body is-open>
   <!-- header-->
   <header class="header">
-    <div class="conteiner">
-      <div class="wraper__logo">
-        <a class="logo" href="index.html"><span class="text">Web</span>Studio</a>
-        <button class="btn-menu js-open-menu" >
-          <svg width="40" Height="40" class="icon-menu ">
-            <use href="images/sprites.svg#icon-menu_40px"></use>
-          </svg>
-          <svg width="40" Height="40" class="icom-menu-close   js-close-menu">
+    <div class="heder__wraper-conter conteiner">
+      <a class="logo" href="index.html"><span class="text">Web</span>Studio</a>
+      <button class="btn-menu js-open-menu">
+        <svg width="40" Height="40" class="icon-menu ">
+          <use href="images/sprites.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+
+
+
+      <div class="container-navigation js-menu-container">
+        <button class="btn-menu-2 js-close-menu">
+          <svg width="40" Height="40" class="icom-menu-close">
             <use href="images/sprites.svg#icon-close_40px"></use>
           </svg>
         </button>
-      </div>
-
-
-      <div class="container-navigation js-menu-container" >
         <nav>
           <ul class="navigation list">
             <li class="navigation__link navigation__element"><a href="index.html"
@@ -52,45 +53,44 @@
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
-
-          <ul class="seti">
-            <li class="seti-name">Instagram</li>
-            <li class="seti-name">Twitter</li>
-            <li class="seti-name">Facebook</li>
-            <li class="seti-name">LinkedIn</li>
-          </ul>
-
+        <ul class="seti">
+          <li class="seti-name">Instagram</li>
+          <li class="seti-name">Twitter</li>
+          <li class="seti-name">Facebook</li>
+          <li class="seti-name">LinkedIn</li>
+        </ul>
       </div>
     </div>
   </header>
 
-<header class="header-tablet">
-  <div class="conteiner">
-    <a class="logo" href="index.html"><span class="text">Web</span>Studio</a>
-    <nav>
-      <ul class="navigation list">
-        <li class="navigation__link navigation__element"><a href="index.html"
-            class="navigation__btn navigation__btn-activ navigation__btncorrent">Студія</a></li>
-        <li class="navigation__link navigation__element"><a href="portfolio.html" class="navigation__btn">Портфоліо</a>
+  <header class="header-tablet">
+    <div class="conteiner">
+      <a class="logo" href="index.html"><span class="text">Web</span>Studio</a>
+      <nav>
+        <ul class="navigation list">
+          <li class="navigation__link navigation__element"><a href="index.html"
+              class="navigation__btn navigation__btn-activ navigation__btncorrent">Студія</a></li>
+          <li class="navigation__link navigation__element"><a href="portfolio.html"
+              class="navigation__btn">Портфоліо</a>
+          </li>
+          <li class="navigation__link navigation__element"><a href="#" class="navigation__btn">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="communication">
+        <li class="communication__link ">
+          <a href="mailto:info@devstudio.com" class="communication__mail"> <svg width="16" Height="12"
+              class="communication__icon-mail">
+              <use href="images/sprites.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
         </li>
-        <li class="navigation__link navigation__element"><a href="#" class="navigation__btn">Контакти</a></li>
+        <li class="communication__link "><a href="tel:+380961111111" class="communication__tel"><svg width="14"
+              Height="16" class="communication__icon-tel">
+              <use href="images/sprites.svg#icon-smartphone-2"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
       </ul>
-    </nav>
-    <ul class="communication">
-      <li class="communication__link ">
-        <a href="mailto:info@devstudio.com" class="communication__mail"> <svg width="16" Height="12"
-            class="communication__icon-mail">
-            <use href="images/sprites.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a>
-      </li>
-      <li class="communication__link "><a href="tel:+380961111111" class="communication__tel"><svg width="14" Height="16"
-            class="communication__icon-tel">
-            <use href="images/sprites.svg#icon-smartphone-2"></use>
-          </svg>+38 096 111 11 11</a>
-      </li>
-    </ul>
-  </div>
-</header>
+    </div>
+  </header>
 
 
 
@@ -414,12 +414,12 @@
   <!-- footer -->
   <footer class="footer">
     <div class="footer__container conteiner">
-      <div class="">
+      <div class="wraper_tablet-logo">
         <div class="logo__wraper">
           <a class="footer_logo logo" href="index.html"><span class="text">Web</span>Studio</a>
         </div>
         <address>
-          <ul class="footer__list">
+          <ul class="footer__list list">
             <li>
               <a class="footer__address" href="https://goo.gl/maps/K1UanMXqAidAnJSs7" target="_blank"
                 rel="noopener noreferrer nofollow">
@@ -461,14 +461,15 @@
         <h1 class="footer__text">Підпишіться на розсилку</h1>
         <form action="" class="footer__form">
           <input class="footer__imput" type="email" name="email" placeholder="E-mail">
+          <div class="btn-wraper">
+            <button class="footer__btn">
+              Підписатися 
+              <svg width="20" viewBox="0 0 100 100" class="footer__icon-distribution">
+                <use href="images/sprites.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
-        <div class="btn-wraper">
-          <button class="footer__btn">
-            Підписатися <svg width="20" viewBox="0 0 100 100" class="footer__icon-distribution">
-              <use href="images/sprites.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
   </footer>
