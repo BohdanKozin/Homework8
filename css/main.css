@@ -555,7 +555,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
+  max-width: 450px;
   height: 609px;
   border-radius: 4px;
   background-color: var(--other-text-color);
