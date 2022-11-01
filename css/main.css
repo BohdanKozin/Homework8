@@ -555,7 +555,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  width: 100%;
   height: 609px;
   border-radius: 4px;
   background-color: var(--other-text-color);
@@ -1704,7 +1704,7 @@ img {
 .btn-menu-2 {
   position: absolute;
   top: 10px;
-  right: 25px;
+  right: 10px;
   border: 0px;
   background-color: #fff;
   cursor: pointer;
