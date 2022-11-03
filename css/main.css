@@ -383,7 +383,7 @@ img {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .conteiner {
     margin: 0 auto;
     width: 1230px;
@@ -457,7 +457,7 @@ body {
   line-height: 1.7;
   color: var(--advantage-text-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .advantage__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -473,7 +473,7 @@ body {
     width: 354px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .advantage .advantage {
     padding-top: 94px;
   }
@@ -757,55 +757,57 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 100px) and (max-width: 767px) {
+.hero {
+  background-color: var(--first-bgc);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("..images/hero-fon.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..images/hero-fon.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fon2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon2.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
+    padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/mobile.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile.jpg");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fon2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon2.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile@2x.jpg");
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fon2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon2.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet.jpg");
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/descktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/descktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/descktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/descktop@2x.jpg");
+  }
+}
+
 .hero__wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,138 +854,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   z-index: 1;
-}
-@media screen and (min-width: 768px) {
-  .hero .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fon2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon2.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .hero__wraper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  .hero__title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    width: 360px;
-    line-height: 42px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--other-text-color);
-  }
-  .hero__button {
-    margin-top: 30px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-family: "Roboto", sans-serif;
-    background-color: var(--focus-text-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    color: var(--other-text-color);
-    padding: 10px 32px 10px 32px;
-    border-width: 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .hero .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-fon2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon2.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .hero__wraper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  .hero__title {
-    width: 700px;
-    margin: 0;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--other-text-color);
-  }
-  .hero__button {
-    margin-top: 30px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-family: "Roboto", sans-serif;
-    background-color: var(--focus-text-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    color: var(--other-text-color);
-    padding: 10px 32px 10px 32px;
-    border-width: 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-  }
 }
 
 .beckground {
@@ -1069,7 +939,7 @@ body {
 .team__netwokr-icon {
   fill: currentColor;
 }
-@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1082,7 +952,7 @@ body {
     width: 354px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team .team {
     margin: 0 auto;
     width: 1230px;
@@ -1217,7 +1087,7 @@ body {
   border-color: var(--focus-text-color);
   color: var(--focus-text-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1230,7 +1100,7 @@ body {
     width: 226px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1470,7 +1340,7 @@ body {
   height: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .footer__container {
     position: relative;
   }
@@ -1489,7 +1359,7 @@ body {
     margin-left: 167px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer {
     background-color: #2F303A;
   }
@@ -1809,7 +1679,7 @@ body {
   color: #2196F3;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .header {
     display: none;
   }
@@ -1937,7 +1807,7 @@ body {
     color: var(--focus-text-color);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header {
     display: none;
   }
@@ -2054,12 +1924,12 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .working {
     display: none;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .working {
     display: block;
     padding: 94px 0px 94px 0px;
