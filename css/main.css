@@ -341,22 +341,6 @@ template {
   display: none;
 }
 
-:root {
-  --primary-text-color: #212121;
-  --focus-text-color: #2196F3;
-  --other-text-color: #FFFFFF;
-  --logo-text-color: #000000;
-  --advantage-text-color: #757575;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: #ffffff;
-}
-
 a,
 p,
 ul,
@@ -406,6 +390,22 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+:root {
+  --primary-text-color: #212121;
+  --focus-text-color: #2196F3;
+  --other-text-color: #FFFFFF;
+  --logo-text-color: #000000;
+  --advantage-text-color: #757575;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
 }
 
 .advantage {
@@ -984,10 +984,6 @@ img {
     border-radius: 4px;
     cursor: pointer;
   }
-}
-
-.working {
-  display: none;
 }
 
 .beckground {
@@ -2052,5 +2048,62 @@ img {
   }
   .communication__mail:hover, .communication__mail:focus, .communication__tel:hover, .communication__tel:focus {
     color: var(--focus-text-color);
+  }
+}
+.working {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599.9px) {
+  .working {
+    display: none;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .working {
+    display: block;
+    padding: 94px 0px 94px 0px;
+  }
+  .working__title {
+    margin: 0 0 50px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
+  .working__list {
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .working__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .working__item {
+    position: relative;
+    width: 370px;
+  }
+  .working__tetx {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--other-text-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 }/*# sourceMappingURL=main.css.map */

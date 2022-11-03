@@ -1,18 +1,12 @@
 @import "./utils/normalize.scss";
-
-
-@import "./utils/variables.scss";
-
 @import "./utils/settings-standart.scss";
-
-
-
+@import "./utils/variables.scss";
 @import "./components/advantage-firm";
 @import "./components/modal-windows";
 @import "./components/hero";
-@import "./components/working";
 @import "./components/team";
 @import "./components/regular-clients";
 @import "./components/footer";
 @import "./components/header-logo";
 @import "./components/header";
+@import "./components/working";
