@@ -197,6 +197,22 @@ position: relative;}
     } 
 
 
+@media screen and (max-width: 420px) {
+    .container-navigation .communication__tel {font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;}
+                .container-navigation .communication__mail{font-size: 20px;
+                    line-height: 28px;}
+.container-navigation .seti-name{font-size: 10px;
+    line-height: 18px;}
+
+
+}
+
+
+
+
+
 
   @media screen and (min-width: 768px) and (max-width:1199.9px) {
       .header{display: none;}
@@ -337,10 +353,12 @@ position: relative;}
      }
  }
 
-
-
-
   }
+
+
+
+
+
 
   @media screen and (min-width: 1200px) {
       .header {

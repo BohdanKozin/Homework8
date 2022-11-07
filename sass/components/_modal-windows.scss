@@ -39,6 +39,12 @@
 
  }
 
+ @media screen and (max-width: 420px) {
+    &__content {
+            height: 600px
+        }
+ }
+
       
 
     &__button {
@@ -241,3 +247,4 @@
         cursor: pointer;
     }
 }
+

@@ -567,6 +567,11 @@ body {
     min-width: 528px;
   }
 }
+@media screen and (max-width: 420px) {
+  .modal__content {
+    height: 600px;
+  }
+}
 .modal__button {
   position: absolute;
   top: 5px;
@@ -774,6 +779,11 @@ body {
   height: 400px;
   max-width: 1600px;
   margin: 0 auto;
+}
+@media screen and (max-width: 420px) {
+  .hero .hero__title {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .hero {
@@ -1715,6 +1725,21 @@ body {
   border-right: 0px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 420px) {
+  .container-navigation .communication__tel {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container-navigation .communication__mail {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .container-navigation .seti-name {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .header {
     display: none;
