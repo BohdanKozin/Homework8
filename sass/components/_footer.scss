@@ -203,20 +203,24 @@
 
     .wraper_tablet-logo {
         position: absolute;
-       left: 105px;
+        left: 105px;
     }
 
-    .footer__link-container {position: absolute;
-    top: 7px;
-right: 89px;}
+    .footer__link-container {
+        position: absolute;
+        top: 7px;
+        right: 89px;
+    }
 
     .footer__mail {
         width: 450px;
-   margin-top: 190px;
-margin-left: 167px;}
+        margin-top: 190px;
+        margin-left: 167px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+.footer .logo__wraper{ text-align: left;}
     .footer {
         background-color: #2F303A;
 
@@ -231,8 +235,11 @@ margin-left: 167px;}
             padding-bottom: 60px;
         }
 
+              
+        
         &__list {
             margin-top: 20px;
+            text-align: left;
         }
 
         &__address {
@@ -301,12 +308,13 @@ margin-left: 167px;}
             background-color: var(--focus-text-color);
         }
 
-        &__mail {display: flex;
+        &__mail {
+            display: flex;
             flex-direction: column;
-                justify-content: space-evenly;
-                align-items: baseline;
+            justify-content: space-evenly;
+            align-items: baseline;
             margin-left: 93px;
-            
+
         }
 
         &__text {
@@ -322,9 +330,7 @@ margin-left: 167px;}
             text-transform: uppercase;
         }
 
-        &__form {
-            
-        }
+        &__form {}
 
         &__imput {
             padding-left: 15px;
@@ -347,12 +353,14 @@ margin-left: 167px;}
             outline-offset: 0;
         }
 
-.btn-wraper{ position: relative;
-top: -73px;
-right: -285px;}
+        .btn-wraper {
+            position: relative;
+            top: -73px;
+            right: -285px;
+        }
 
         &__btn {
-          
+
             align-items: center;
             margin-left: 12px;
             ;
